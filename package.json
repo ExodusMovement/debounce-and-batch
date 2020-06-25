@@ -1,0 +1,56 @@
+{
+  "name": "debounce-and-batch",
+  "version": "1.0.0",
+  "description": "debounce and batch-process events",
+  "author": "mvayngrib",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "standard",
+      "prettier",
+      "prettier/standard"
+    ]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "always",
+    "trailingComma": "es5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "flow-bin": "^0.91.0",
+    "flow-typed": "^2.5.1",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.1",
+    "prettier": "^1.16.1"
+  },
+  "dependencies": {
+    "make-concurrent": "4.0.0"
+  }
+}
