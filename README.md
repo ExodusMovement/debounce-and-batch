@@ -7,7 +7,7 @@ debounce and batch-process events
 ```js
 const debounceAndBatch = require('debounce-and-batch')
 
-// say you want to batch process eating pizzas
+// say you want to batch process throwing away the trash
 const emptyTrash = debounceAndBatch({
   name: 'trash batch-processor',
   interval: 1000,
